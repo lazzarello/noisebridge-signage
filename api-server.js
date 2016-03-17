@@ -24,11 +24,9 @@ function parse_input(protocol, input) {
   return input;
 }
 
-server.listen(addr + port, someshit) {
+server.listen(addr + port, function( req, resp) {
 
-  if ( body.payload.length > input_length ) {
+  if ( req.payload.length > input_length ) {
     return "GTFO";
   }
-
-  return "WTF";
-}
+});
